@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    /* central positioning */
+    display: flex;
+    align-items: center;
+    /*vertikalno centriranje */
+    justify-content: center;
+    /* veličina cijelog ekrana pomoću VH*/
+    height: 100vh;
+    /* da se ne vidi scroll bar po defaultu*/
+    overflow: hidden;
+}
+
+.bg {
+    background: url('https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30;
+    left: -30;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.load-text {
+    font-size: 50px;
+    color: white;
+}
